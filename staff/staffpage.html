@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bookings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media icon library-->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/haukaicss.css">
+
+</head>
+
+<body>
+
+  <header>
+    <!--navigation-->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../images/haukailogo.png" alt="Haukai logo" class="logo"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="Navigation Menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../aboutus.html">About</a></li>
+              <li><a href="../menu.html">Menu</a></li>
+              <li><a href="../reservations.html">Bookings</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../hours.html">Hours</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="staffpage.html"><span class="glyphicon glyphicon-log-in"></span> Staff Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <body>
+      <h2>Select a name to view roster and contact information</h2>
+      <p class="last-updated" id="last-updated">Last updated: <time></time></p>
+    
+      <script>
+        // Get the current date and time
+        const currentDate = new Date();
+    
+        // Format the date and time as desired (e.g., "Month Day, Year, HH:MM AM/PM Timezone")
+        const formattedDate = currentDate.toLocaleString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          second: "numeric",
+          hour12: true,
+          timeZoneName: "short",
+        });
+    
+        // Update the content of the <time> element with the current date and time
+        document.querySelector("p.last-updated time").textContent = formattedDate;
+      </script>
+
+      <button onclick="myFunction('Kayleigh')" class="w3-button w3-block w3-left-align">
+        Kayleigh</button>
+         <div id="Kayleigh" class="w3-container w3-hide">
+          <p>Shift Information</p>
+          <p>Contact: 027-123-1234</p>
+        </div>
+
+        <button onclick="myFunction('Nikau')" class="w3-button w3-block w3-left-align">
+          Nikau</button>
+            <div id="Nikau" class="w3-container w3-hide">
+              <p>Shift Information</p>
+              <p>Contact: 027-123-1234</p>
+              <p>Test Test</p>
+          </div>
+
+          <button onclick="myFunction('Kiri')" class="w3-button w3-block w3-left-align"> 
+            Kiri</button>
+            <div id="Kiri" class="w3-container w3-hide">
+              <p>Shift Information</p>
+              <p>Contact: 027-123-1234</p>
+          </div>
+
+        <script>
+          function myFunction(id) {
+            var x = document.getElementById(id);
+            var button = document.querySelector('[onclick="myFunction(\'' + id + '\')"]');
+
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+              button.classList.add("active-button"); // Add the active class
+            } else {
+              x.className = x.className.replace(" w3-show", "");
+              button.classList.remove("active-button"); // Remove the active class
+            }
+          }
+        </script> 
+  </body>
+    

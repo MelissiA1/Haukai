@@ -1,0 +1,425 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.nav.navbar-nav li a.active {
+  color: #ffffff; /* Change text color for the active link */
+  font-weight:bold;
+}
+
+.menu {display: none}
+
+/* Default CSS for background image container */
+#page-bg {
+  background-color: #000;
+  padding: 20px;
+  height: 390px; /* Default height for larger screens */
+}
+    
+/* Media query to adjust the height for smaller screens */
+@media (max-width: 767px) {
+  #page-bg {
+    height: 250px; /* Reduced height for smaller screens */
+  }
+}
+
+/* bgimg container text */
+#page-bg #title2 {
+    color: #fff; /* Set the text color to white */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 10); /* Adjust the values for the shadow effect */
+}
+
+/* bgimg container sub-text */
+#page-bg #subtitle2 {
+  color: #fff; /* Set the text color to white */
+  text-shadow: 3px 3px 8px rgba(244, 6, 6, 0.1); /* Adjust the values for the shadow effect */
+  font-size: 1.4em;
+  margin-top: 30px;
+}
+
+/* contact bgimg container sub-text */
+#contact2 {
+  color: #fff; /* Set the text color to white */
+  text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5); /* Adjust the values for the shadow effect */
+  font-size: 1.4em;
+  margin-top: 30px;
+}
+
+/* Style for the address and phone container in index */
+#address-container {
+  background-color: #383636c5;
+  color: #fff;
+  padding: 30px;
+  height: 200px;
+}
+
+/* CSS for height adjustment on smaller screens */
+@media (max-width: 767px) {
+  #address-container {
+    height: 275px;
+  }
+}
+
+/* Style the menu section names and content */
+.menu-item {
+  font-family: sans-serif;
+  font-size: 26px; 
+  color: white; /* Set the font color to white */
+}
+
+/* Style the menu item descriptions */
+.menu-content {
+  font-family: sans-serif; 
+  font-size: 18px;
+  color: #333; 
+}
+
+/* Style the menu item names (h1) */
+.menu-item-name {
+  font-family: sans-serif;
+  font-size: 24px; 
+  color: #333;
+}
+
+/* Style for the prices */
+.menu-item-price {
+  font-family: sans-serif; 
+  font-size: 24px;
+  color: #555;
+}
+
+/* Style for the beverage prices  */
+.menu-item-bev-price{
+  font-family:sans-serif;
+  font-size:18px
+}
+
+/* CSS for smaller height on smaller screens */
+@media (max-width: 767px) {
+  #menu-bg {
+    height: 200px; /* Reduced height for smaller screens */
+  }
+}
+
+.title-large {
+  z-index: 1; /* Ensure the text stays above the images */
+}
+
+/* Set height of the grid so .sidenav can be 100% */
+.row.content {height: 450px}
+
+/* Default CSS for the story container in about us */
+#story-container {
+  background-color: #383636c5;
+  color: #fff;
+  padding: 20px;
+  height: 250px; /* Default height for larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  #story-container {
+    height: 310px; /* Adjust the height for smaller screens */
+  }
+}
+
+/* Default CSS for the karakia container in about us */
+#karakia-container {
+  background-color: #1c1b1bc5;
+  color: #fff;
+  padding: 20px;
+  height: 570px; /* Default height for larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  #karakia-container {
+    height: 630px; /* Adjust the height for smaller screens */
+  }
+}
+    
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+  height: auto;
+  padding: 15px;
+}
+
+/*Style font for subtitle2 on smaller screens */
+@media (max-width: 767px){
+  #page-bg #subtitle2 {
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* values for the shadow effect */
+    font-size: 1.4em;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Reduce font size for title2 on mobile devices */
+@media (max-width: 767px) {
+  #title2 {
+    font-size: 60px; 
+  }
+}
+
+/* Adjust font size for menu items in mobile view */
+@media (max-width: 767px) {
+  .menu-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Reduce the font size for the beverage menu items on smaller screens */
+  #Beverages .menu-content {
+    font-size: 45%; 
+  }
+}
+
+@media (max-width: 767px) {
+  /* Reduce the font size for the beverage price on smaller screens */
+  #Beverages .menu-item-bev-price {
+    font-size: 85%;
+  }
+}
+
+/* Default styling for iframe */
+iframe {
+  width: 100%; /* Make the iframe full width by default */
+  max-width: 100%; /* Ensure it doesn't exceed the width of its container or the viewport */
+}
+
+/* Media query for adjusting the iframe on smaller screens */
+@media (max-width: 767px) {
+  iframe {
+    width: auto; /* Allow the iframe to adjust to its natural width on smaller screens */
+  }
+}
+
+.row.content {height:auto;} 
+}
+
+/*styling for the background image*/
+/* Background image by nuraghies from Freepik (https://www.freepik.com) */
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.1)), url("../images/wooden-board-empty-table-front-blurred-background-generative-ai2.jpg");
+  background-size: cover;
+  min-height:100%;
+  text-align: center; /* Center-align text horizontally */
+  padding-top: 30px; /* Padding to center vertically */
+}
+
+/* background image styling for smaller screens */
+@media (max-width: 767px) {
+  .bgimg {
+    min-height:100%; 
+  }
+}
+
+/*styling for navbar logo*/
+.logo {
+  max-width: 100%;
+  width:100px; 
+  height: auto;
+}
+
+/* Vertically align the navigation items in the middle */
+.navbar-nav > li > a {
+  line-height: 40px; 
+}
+
+/* Define the classes for text size */
+.title-large {
+  font-size: 6em;
+  color: black;
+  text-shadow: 3px 4px 8px rgba(255, 255, 255, 3); /* Adjust the values for the shadow effect */
+  text-align: center; /* Center-align text within the title */
+  line-height: 1.2; /* Adjust line height for vertical centering */
+}
+
+/* Custom button styling */
+.btn-custom {
+  background-color: rgb(39, 39, 39);
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white; /* Set text color to white */
+  margin-bottom: 10px; /* Add space between buttons vertically */
+  width: 130px;
+  cursor:pointer;
+  margin: 10px;
+  display:inline-block;
+  text-align:center;
+  text-decoration:none;
+}
+
+/* hover and active state styles */
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+  background-color: #333; /* Change color on hover or active state */
+  color: white; /* Change text color on hover or active state */
+}
+
+/* Style footer background color, text and padding */
+footer {
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color: #020202;
+  color: white;
+  padding: 20px;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  align-items:center;
+  border-radius:50%;
+  margin-right: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: hsl(220, 2%, 69%);
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: hsl(220, 2%, 69%);
+  color: white;
+} 
+/* Twitter */
+.fa-instagram {
+  background: hsl(220, 2%, 69%);
+  color: white;
+} 
+
+/* Center social media icons vertically and horizontally */
+.text-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tooltip container */
+#privacy-policy-link {
+  position: relative;
+  color: rgb(223, 223, 224);
+  text-decoration: underline;
+}
+
+/* Tooltip text */
+#privacy-policy-link::after {
+  content: "This is the Privacy Policy content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Show the tooltip text when hovering over the link */
+#privacy-policy-link:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+/* CSS to make social media icons smaller */
+.small-icon {
+  font-size: 20px; 
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Reduce font size of social media icons */
+  .fa {
+    font-size: 16px;
+    width: 32px;
+  }
+  /* Reduce font size of footer text */
+  footer {
+     font-size: 12px;
+  }
+  /* Add space between footer text and social media icons */
+  .text-right {
+    padding-top: 10px;
+  }
+  }
+  #staff-widget {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .widget-content p {
+    margin: 5px 0;
+  }
+  
+  #edit-button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #edit-button.hide {
+    display: none;
+  }
+  
+  .editable {
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  body{
+    margin-top:20px;
+    background:#F0F8FF
+}
+
+h2 {
+  margin-left: 20px; 
+}
+p.last-updated {
+  padding-left: 20px; 
+  font-style: italic;
+  color:red
+}  
+/* Default style for unselected buttons */
+.w3-button {
+  background-color: #5bb2d1; /* Default background color */
+  color: #fff; /* Default text color */
+ 
+}
+
+/* Hover effect for unselected buttons */
+.w3-button:hover {
+  background-color: #0056b3;
+
+}
+
+/* Style for selected (active) button */
+.active-button {
+  background-color: #dda459; 
+  color: #fff; 
+}

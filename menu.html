@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media icon library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/haukaicss.css">
+</head>
+
+<body>
+
+<header>
+<!--navigation-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/haukailogo.png" alt="Haukai logo" class="logo"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="Navigation Menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li class="active"><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Bookings</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hours.html">Hours</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="staff/staffpage.html"><span class="glyphicon glyphicon-log-in"></span> Staff Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- Background image by nuraghies from Freepik (https://www.freepik.com) -->
+<!-- Add the .bgimg class to this div-->
+<div id="page-bg" class="bgimg container-fluid text-center" title="Image by nuraghies from Freepik (https://www.freepik.com)">    
+    <h1 id="title2" class="title-large">OUR<br>MENU</h1>
+    <h2 id="subtitle2">Click the options below to explore our menu.</h2><br>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+           
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizers');" id="appetizer-link" class="col-xs-6 col-sm-3 tablink w3-padding-large w3-hover-white menu-item">APPETIZERS</a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Main');" id="main-link" class="col-xs-6 col-sm-3 tablink w3-padding-large w3-hover-white menu-item">MAIN</a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');" id="dessert-link" class="col-xs-6 col-sm-3 tablink w3-padding-large w3-hover-white menu-item">DESSERT</a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');" id="beverages-link" class="col-xs-6 col-sm-3 tablink w3-padding-large w3-hover-white menu-item">BEVERAGES</a>
+        </div>
+  
+      <div id="Appetizers" class="w3-container menu w3-padding-32 w3-white">
+        <h1 class="menu-item-name"><b>REWENA BREAD</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$10</span></h1>
+        <p class="w3-text-grey menu-content">Traditional M&amacr;ori bread.</p>
+            <hr>
+     
+        <h1 class="menu-item-name"><b>PAUA FRITTER</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$16</span></h1>
+        <p class="w3-text-grey menu-content">Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>RAW FISH</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$20</span></h1>
+        <p class="w3-text-grey menu-content">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+        <hr>
+
+        <h1 class="menu-item-name"><b>POACHED SALMON</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$22</span></h1>
+        <p class="w3-text-grey menu-content">Salmon poached in an orange and pistachio glaze, served with rewena bread.</p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>SEAFOOD BASKET</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$25</span></h1>
+        <p class="w3-text-grey menu-content">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+        <hr>
+
+      </div>
+  
+      <div id="Main" class="w3-container menu w3-padding-32 w3-white">
+        <h1 class="menu-item-name"><b>SEAFOOD CHOWDER</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$30</span></h1>
+        <p class="w3-text-grey menu-content">Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>FISH OF THE DAY</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$25</span></h1>
+        <p class="w3-text-grey menu-content">Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+        <hr>
+
+        <h1 class="menu-item-name"><b>MUSSELS AND SCALLOPS</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$25</span></h1>
+        <p class="w3-text-grey menu-content">Steamed mussel & scallop mousse, honey and soy broth.</p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>PORK BELLY</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$30</span></h1>
+        <p class="w3-text-grey menu-content">Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>LAMB STEAK</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$33</span></h1>
+        <p class="w3-text-grey menu-content">New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut
+            squash and mushroom jus.</p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>VENISON</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$33</span></h1>
+        <p class="w3-text-grey menu-content">Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine jus.</p>
+        <hr>
+             
+      </div>
+  
+  
+      <div id="Dessert" class="w3-container menu w3-padding-32 w3-white">
+        <h1 class="menu-item-name"><b>KAPITI ICE CREAM</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$10</span></h1>
+        <p class="w3-text-grey menu-content">Check for daily specials.</p>
+        <hr>
+          
+        <h1 class="menu-item-name"><b>STEAMED PUDDING</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$12</span></h1>
+        <p class="w3-text-grey menu-content">Golden-syrup-flavoured steamed pudding, served with vanilla ice cream.</p>
+        <hr>
+          
+        <h1 class="menu-item-name"><b>MINI PAVLOVA</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$16</span></h1>
+        <p class="w3-text-grey menu-content">Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit.</p>
+        <hr>
+          
+        <h1 class="menu-item-name"><b>BANOFFEE PIE</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price">$16</span></h1>
+        <p class="w3-text-grey menu-content">Toffee, fresh bananas and fresh cream.</p>
+        <hr>
+      </div>
+      
+      <div id="Beverages" class="w3-container menu w3-padding-32 w3-white">
+        <h1 class="menu-item-name"><b>RED</b> <span class="w3-right menu-item-bev-price">B / G</span></h1>
+        <p class="w3-text-grey menu-content">Terrace Edge Pinot Noir, 2012, Wairarapa<span class="w3-right menu-item-bev-price">53/13</span></p>
+        <p class="w3-text-grey menu-content">Altitude Pinot Noir, 2010, Marlborough<span class="w3-right menu-item-bev-price">64/15</span></p>
+        <p class="w3-text-grey menu-content">Greystone Pinot Noir, 2012, Wairarapa<span class="w3-right menu-item-bev-price">73/17</span></p>
+        <p class="w3-text-grey menu-content">Terrace Edge, Syrah, 2012, Wairarapa<span class="w3-right menu-item-bev-price">53/13</span></p>
+        <p class="w3-text-grey menu-content">Altitude Syrah, 2010, Marlborough<span class="w3-right menu-item-bev-price">64/15</span></p>
+        <p class="w3-text-grey menu-content">Greystone Syrah, 2012, Wairarapa<span class="w3-right menu-item-bev-price">73/17</span></p>
+        <p class="w3-text-grey menu-content">Pegasus Bay Merlot, 2013, Waipara<span class="w3-right menu-item-bev-price">65/14</span></p>
+        <p class="w3-text-grey menu-content">Pegasus Bay Pinot Noir, 2013, Waipara<span class="w3-right menu-item-bev-price">110</span></p>
+        <hr>
+
+        <h1 class="menu-item-name"><b>WHITE</b> <span class="w3-right menu-item-bev-price">B / G</span></h1>
+        <p class="w3-text-grey menu-content">Spade Oak Pinot Gris, 2011, Gisborne<span class="w3-right menu-item-bev-price">40/10</span></p>
+        <p class="w3-text-grey menu-content">Maude Pinot Gris, 2017, Otago<span class="w3-right menu-item-bev-price">49.50/11</span></p>
+        <p class="w3-text-grey menu-content">Charles Wiffen Chardonnay, 2013, Otago<span class="w3-right menu-item-bev-price">48/11</span></p>
+        <p class="w3-text-grey menu-content">Amisfield, Riesling, 2016, Otago<span class="w3-right menu-item-bev-price">53/12</span></p>
+        <p class="w3-text-grey menu-content">Lamont Riesling, 2010, Otago<span class="w3-right menu-item-bev-price">57/13</span></p>
+        <p class="w3-text-grey menu-content">Elephant Hill Viognier, 2013, Hawkes Bay<span class="w3-right menu-item-bev-price">55/12</span></p>
+        <p class="w3-text-grey menu-content">Folium Sauvignon Blanc, 2011, Marlborough<span class="w3-right menu-item-bev-price">52/11</span></p>
+        <p class="w3-text-grey menu-content">Billecart-Salmon Brut Reserve, France<span class="w3-right menu-item-bev-price">120</span></p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>BEER AND CIDER</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price"></span></h1>
+        <p class="w3-text-grey menu-content">Garage project range<span class="w3-right menu-item-bev-price">11</span></p>
+        <p class="w3-text-grey menu-content">Tuatara range<span class="w3-right menu-item-bev-price">11</span></p>
+        <p class="w3-text-grey menu-content">Panhead range<span class="w3-right menu-item-bev-price">10</span></p>
+        <p class="w3-text-grey menu-content">Coopers ale<span class="w3-right menu-item-bev-price">10</span></p>
+        <p class="w3-text-grey menu-content">Heineken<span class="w3-right menu-item-bev-price">11</span></p>
+        <p class="w3-text-grey menu-content">Moa cider<span class="w3-right menu-item-bev-price">10</span></p>
+        <p class="w3-text-grey menu-content">Crooked cider<span class="w3-right menu-item-bev-price">10</span></p>
+        <hr>
+        
+        <h1 class="menu-item-name"><b>NON-ALCOHOLIC</b> <span class="w3-right w3-tag w3-dark-grey w3-round menu-item-price"></span></h1>
+        <p class="w3-text-grey menu-content">Mineral water<span class="w3-right menu-item-bev-price">4</span></p>
+        <p class="w3-text-grey menu-content">Soft drinks<span class="w3-right menu-item-bev-price">4</span></p>
+        <p class="w3-text-grey menu-content">Juice<span class="w3-right menu-item-bev-price">4</span></p>
+        <p class="w3-text-grey menu-content">Coffee<span class="w3-right menu-item-bev-price">4.50</span></p>
+        <p class="w3-text-grey menu-content">Tea<span class="w3-right menu-item-bev-price">3.50</span></p>
+        <hr>
+             
+      </div>
+    </div>
+  </div>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" w3-white", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " w3-white"; // Add white background to the active link
+    }
+    document.getElementById("myLink").click();
+    </script>
+
+<script>
+    // JavaScript code to change the background image when the "Appetizer" link is clicked
+    document.addEventListener("DOMContentLoaded", function () {
+    var menuBg = document.getElementById("page-bg");
+    var appetizerLink = document.getElementById("appetizer-link");
+    var dessertLink = document.getElementById("dessert-link");
+    var mainLink = document.getElementById("main-link"); // Add this line to reference the "Main" link
+    var beveragesLink = document.getElementById("beverages-link"); // Add this line to reference the "Beverages" link
+
+    var backgroundImages = {
+        "Appetizers": "images/fish.jpg",
+        "Desserts": "images/icecream.jpg",
+        "Main": "images/soup.jpg", // Add the background image for "Main"
+        "Beverages": "images/wine.jpg", // Add the background image for "Beverages"
+        // Add more menu sections and their background images as needed
+    };
+
+    appetizerLink.addEventListener("click", function () {
+        menuBg.style.backgroundImage = "url(" + backgroundImages["Appetizers"] + ")";
+    });
+
+    dessertLink.addEventListener("click", function () {
+        menuBg.style.backgroundImage = "url(" + backgroundImages["Desserts"] + ")";
+    });
+
+    mainLink.addEventListener("click", function () {
+        menuBg.style.backgroundImage = "url(" + backgroundImages["Main"] + ")";
+    });
+
+    beveragesLink.addEventListener("click", function () {
+        menuBg.style.backgroundImage = "url(" + backgroundImages["Beverages"] + ")";
+    });
+
+    // You can add similar click event listeners for other menu links as needed
+});
+
+</script> 
+
+</main>
+
+<footer class="container-fluid text-center">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      &copy; 2023 The Haukai Restaurant. All rights reserved.
+      <a href="#" id="privacy-policy-link">View our Privacy Policy</a>
+    </div>
+    <div class="col-md-6 text-right">
+      <!-- Add font awesome icons with a custom CSS class -->
+      <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook small-icon" aria-label="Facebook"></a>
+      <a href="https://twitter.com/" target="_blank" class="fa fa-twitter small-icon" aria-label="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram small-icon" aria-label="Instagram"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
